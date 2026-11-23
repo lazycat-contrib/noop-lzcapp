@@ -35,8 +35,8 @@ usage: |
   1. 在懒猫微服打开本应用，等待 daemon 就绪。
   2. 进入应用终端（或 SSH 到微服后 docker exec），登录你的 AI 账号：
      claude 登录（或 codex login）——agent 用这个账号的额度干活。
-  3. Web 聊天页用「机器 token」登录：token 在应用数据目录 noop.toml 的 [server] token 字段，
-     或在终端运行 bun /noop/src/cli.ts status 查看。
+  3. Web 聊天页用「机器 token」登录：token 在应用数据目录的 noop.toml 文件
+     （[server] token 字段），浏览器打开地址后粘贴即可。
   4. 之后直接在聊天框里说目标即可。
 
   说明：
