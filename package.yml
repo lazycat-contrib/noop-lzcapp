@@ -1,0 +1,16 @@
+package: community.lazycat.app.noop
+version: 1.0.7
+name: Noop
+description: "Your own AI team: a small team of Claude Code / Codex agents that runs on this machine, breaks goals into parallel tasks, learns how you decide, and only asks when it truly needs you."
+min_os_version: 1.5.0
+author: huacnlee
+license: MIT
+homepage: https://github.com/huacnlee/noop
+
+locales:
+  zh:
+    name: "Noop"
+    description: "你自己的 AI 团队：一支跑在本机的 Claude Code / Codex 代理小队，把目标拆解成并行任务，学习你的决策方式，只在真正需要你时才来问你。"
+  en:
+    name: "Noop"
+    description: "Your own AI team: a small team of Claude Code / Codex agents that runs on this machine, breaks goals into parallel tasks, learns how you decide, and only asks when it truly needs you."
