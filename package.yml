@@ -7,6 +7,10 @@ author: huacnlee
 license: MIT
 homepage: https://github.com/huacnlee/noop
 
+permissions:
+  required:
+    - net.internet
+
 locales:
   zh:
     name: "Noop"
