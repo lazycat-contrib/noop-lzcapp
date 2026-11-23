@@ -9,7 +9,7 @@ application:
 services:
   noop:
     # ghcr.io/dockers-x/noop:latest (auto-built from huacnlee/noop)
-    image: ghcr.1ms.run/dockers-x/noop:latest
+    image: ghcr.1ms.run/dockers-x/noop:latest@sha256:519ecc46588e874647be0f37c2e45fdb7c63a3720d437c267dba0409a6b022a0
     environment:
       - NOOP_HOME=/lzcapp/var/noop
       - HUB_DATA=/lzcapp/var/noop/data
