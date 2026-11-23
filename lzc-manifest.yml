@@ -33,16 +33,18 @@ usage: |
 
   首次启动：
   1. 在懒猫微服打开本应用，等待 daemon 就绪。
-  2. 进入应用终端（或 SSH 到微服后 docker exec），登录你的 AI 账号：
-     claude 登录（或 codex login）——agent 用这个账号的额度干活。
+  2. 进入应用终端（懒猫应用详情里的「终端」入口），登录你的 AI 账号：
+     运行 claude（按提示登录 Anthropic 账号）或 codex login（ChatGPT 账号）
+     ——agent 用这个账号的额度干活。
   3. Web 聊天页用「机器 token」登录：token 在应用数据目录的 noop.toml 文件
      （[server] token 字段），浏览器打开地址后粘贴即可。
   4. 之后直接在聊天框里说目标即可。
 
   说明：
   - 本打包为本地模式：聊天 API 与数据全部在本机，不依赖 Cloudflare。
-    如需多设备协调 / 邮箱验证码登录，可在终端运行 bun /noop/src/cli.ts init --primary
-    按提示部署你自己的 Cloudflare Worker（免费额度即可）。
+    如需多设备协调 / 邮箱验证码登录，可在终端先 bunx wrangler login 登录你的
+    Cloudflare 账号，再运行 noop init --primary（会去掉本地模式开关并部署你自己的
+    Worker，免费额度即可）。
   - 硬门禁：merge、release、push main 等不可逆操作一律需要你在卡片里批准；
     rm -rf、仓库删除、密钥管理永远被禁止。
   - agent 任务的工作目录默认在应用数据目录下，重启不丢失。
