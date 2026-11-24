@@ -1,16 +1,14 @@
 package: community.lazycat.app.noop
-version: 1.0.7
+version: 1.0.8
 name: Noop
 description: "Your own AI team: a small team of Claude Code / Codex agents that runs on this machine, breaks goals into parallel tasks, learns how you decide, and only asks when it truly needs you."
 min_os_version: 1.5.0
 author: huacnlee
 license: MIT
 homepage: https://github.com/huacnlee/noop
-
 permissions:
   required:
     - net.internet
-
 locales:
   zh:
     name: "Noop"
